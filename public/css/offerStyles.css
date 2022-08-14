@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+    padding: 15px;
+    background: #115F78;
+}
+
+.banner {
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 130px;
+    position: relative;
+    margin-bottom: 2em;
+}
+
+.banner img {
+    position: absolute;
+    aspect-ratio: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-rows: repeat(3, minmax(0, auto));
+    gap: 2em;
+}
+
+.grid-item {
+    background-color: orange;
+    padding: 10px;
+    border-radius: 10px;
+    height: max-content;
+}
+
+.grid-item img {
+    width: 100%;
+}
+
+.grid-item .title {
+    color: white;
+    text-align: center;
+    border-radius: 3px;
+    padding: 5px;
+    margin-bottom: 10px;
+    font-size: 1.5em;
+}
+
+.grid-item .text {
+    color: white;
+    border-radius: 3px;
+    text-align: center;
+    margin-top: 10px;
+    padding: 5px;
+}
+
+.btn-med {
+    padding: 10px 15px;
+    background-color: rgb(4, 201, 86);
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.one {
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.two {
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+.three {
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.four {
+    grid-row-start: 2;
+    grid-row-end: 4;
+}

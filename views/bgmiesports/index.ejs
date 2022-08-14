@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/esports/index.css">
+    <link rel="stylesheet" href="/css/navStyles.css">
+    <title>Battles | Nextin Games</title>
+</head>
+
+<body>
+    <div class="top-bar">
+        <svg id="burger" class="menu" onclick="document.querySelector('#nav').classList.toggle('active')"
+            xmlns="http://www.w3.org/2000/svg" height="48" width="48">
+            <path d="M6 36v-3h36v3Zm0-10.5v-3h36v3ZM6 15v-3h36v3Z" />
+        </svg>
+        <h1 class="top-heading">NextIn Game</h1>
+        <div class="top-btns">
+            <div class="top-btn">
+                <div class="btn-text">
+                    $ <%= wallet %>
+                </div>
+                <a type="button" class="btn-btn" href="/wallet">+</a>
+            </div>
+            <div class="top-btn">
+                <div class="btn-text">
+                    200
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="navigation" id="nav">
+        <div class="nav-links">
+            <a href="/" class="nav-link">
+                <ion-icon name="person-outline" class="page-icon"></ion-icon>
+                <span class="link-text">My Profile</span>
+                <ion-icon name="chevron-forward-outline"></ion-icon>
+            </a>
+            <a href="/" class="nav-link">
+                <ion-icon name="home-outline" class="page-icon"></ion-icon>
+                <span class="link-text">Home</span>
+                <ion-icon name="chevron-forward-outline"></ion-icon>
+            </a>
+            <a href="/offers" class="nav-link">
+                <ion-icon name="card-outline" class="page-icon"></ion-icon>
+                <span class="link-text">Offers Earn</span>
+                <ion-icon name="chevron-forward-outline"></ion-icon>
+            </a>
+            <a href="/trading" class="nav-link">
+                <ion-icon name="analytics-outline" class="page-icon"></ion-icon>
+                <span class="link-text">Investing ans Trading</span>
+                <ion-icon name="chevron-forward-outline"></ion-icon>
+            </a>
+            <a href="/" class="nav-link">
+                <ion-icon name="help-outline" class="page-icon"></ion-icon>
+                <span class="link-text">Do you Know</span>
+                <ion-icon name="chevron-forward-outline"></ion-icon>
+            </a>
+            <a href="/" class="nav-link">
+                <ion-icon name="business-outline" class="page-icon"></ion-icon>
+                <span class="link-text">About Us</span>
+                <ion-icon name="chevron-forward-outline"></ion-icon>
+            </a>
+        </div>
+    </div>
+    <div class="tags">
+        <div class="">
+            # All the Best
+        </div>
+        <div class="">
+            # Rule
+        </div>
+    </div>
+    <div class="tournament">
+        <% for( let index=0; index < data.length; index++ ) { %>
+            <div class="item">
+                <div class="header">
+                    Battle of Panipat 2022
+                </div>
+                <div class="content">
+                    <div class="">
+                        Entry Fee<br>
+                        Rs 20
+                    </div>
+                    <div class="">
+                        Price<br>
+                        Rs 40
+                    </div>
+                    <div class="">
+                        <div class="btn">Start</div>
+                    </div>
+                </div>
+            </div>
+            <% } %>
+                <div class="item">
+                    <div class="header">
+                        Battle of Panipat 2022
+                    </div>
+                    <div class="content">
+                        <div class="">
+                            Entry Fee<br>
+                            Rs 20
+                        </div>
+                        <div class="">
+                            Price<br>
+                            Rs 40
+                        </div>
+                        <div class="">
+                            <div class="btn">Start</div>
+                        </div>
+                    </div>
+                </div>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script>
+        document.addEventListener('click', e => {
+            if (e.target.id != "nav" && e.target.id != "burger") {
+                document.querySelector("#nav").classList.remove("active");
+            }
+        })
+    </script>
+
+</body>
+
+</html>

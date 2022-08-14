@@ -1,0 +1,35 @@
+* {
+    font-family: Arial, sans;
+}
+
+.one,
+.two {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    margin-top: 10px;
+}
+
+.one div,
+.two div {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.one div input,
+.two div input {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+    margin-top: 5px;
+}
+
+.btn {
+    padding: 15px 20px;
+    background-color: green;
+    color: white;
+    border-radius: 5px;
+    width: max-content;
+}
